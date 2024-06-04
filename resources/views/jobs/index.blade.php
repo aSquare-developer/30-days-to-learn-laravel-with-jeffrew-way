@@ -1,6 +1,11 @@
 <x-layout>
     <x-slot:heading>
         Jobs page
+        
+        <a href="/jobs/create">
+            <span class="inline-flex items-center rounded-md bg-green-100 px-2 py-1 text-xs font-medium text-green-700">Create</span>
+        </a>
+        
     </x-slot:heading>
     
     <div class="space-y-4">

@@ -3,7 +3,7 @@
         Edit Job {{ $job->title }}
     </x-slot:heading>
     
-    <form method="POST" action="/jobs/{{ $job->id }}/edit">
+    <form method="POST" action="/jobs/{{ $job->id }}">
         @csrf
         @method('PATCH')
         <div class="space-y-12">
@@ -73,7 +73,7 @@
 
     </form>
 
-    <form method="POST" action="/jobs/{{ $job->id }}/delete" id="delete-form" class="hidden">
+    <form method="POST" action="/jobs/{{ $job->id }}" id="delete-form" class="hidden">
         @csrf
         @method('DELETE')
     </form>

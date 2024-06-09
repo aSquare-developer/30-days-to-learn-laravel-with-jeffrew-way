@@ -12,7 +12,7 @@
                     <div class="sm:col-span-4">
                         <x-form-label for="first_name">First name</x-form-label>
                         <div class="mt-2">
-                            <x-form-input name="first_name" id="first_name"/>
+                            <x-form-input name="first_name" id="first_name" :value="old('first_name')"/>
                             <x-form-error for="first_name" />
                         </div>
                     </div>  
@@ -22,7 +22,7 @@
                     <div class="sm:col-span-4">
                         <x-form-label for="last_name">Last name</x-form-label>
                         <div class="mt-2">
-                            <x-form-input name="last_name" id="last_name"/>
+                            <x-form-input name="last_name" id="last_name" :value="old('last_name')"/>
                             <x-form-error for="last_name" />
                         </div>
                     </div>  
@@ -32,7 +32,7 @@
                     <div class="sm:col-span-4">
                         <x-form-label for="email">Email</x-form-label>
                         <div class="mt-2">
-                            <x-form-input name="email" id="email" type="email"/>
+                            <x-form-input name="email" id="email" type="email" :value="old('email')"/>
                             <x-form-error for="email" />
                         </div>
                     </div>  

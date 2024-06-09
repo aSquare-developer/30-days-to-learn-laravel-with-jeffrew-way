@@ -15,13 +15,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        User::factory()->create([
-            'first_name' => fake()->firstName(),
-            'last_name' => fake()->lastName(),
-            'email' => fake()->email(),
-        ]);
-
-        Job::factory()->create([
+        Job::factory(100)->create([
             'employer_id' => Employer::factory()
         ]);
 
